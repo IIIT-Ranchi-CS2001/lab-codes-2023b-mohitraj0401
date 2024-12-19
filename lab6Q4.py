@@ -1,0 +1,7 @@
+input_string = input("Enter a comma-separated string: ")
+letters = list(map(lambda x: x.upper(), filter(lambda x: x.isalpha(), input_string.split())))
+print(letters)
+digits = list(map(lambda x: int(x)**2, filter(lambda x: x.isdigit(), input_string.split())))
+print(digits)
+alphanumeric = list(filter(lambda x: x.isalnum(), input_string.split()))
+print(alphanumeric)
